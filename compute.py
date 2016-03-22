@@ -42,31 +42,3 @@ for pts in tqdm.tqdm(ITR,total=total_points):
 h5 = h5py.File(f_h5,'w')
 h5["points"] = R
 h5.close()
-#R = list(ITR)
-exit()
-
-#import seaborn as sns
-import pylab as plt
-
-
-for Z in zip(*R):
-    X = np.array([float(x.real) for x in Z])
-    Y = np.array([float(x.imag) for x in Z])
-
-    idx = np.abs(Y)>0.0001
-    #X = X[idx]
-    #Y = Y[idx]
-
-    print X.shape
-
-    n = len(Z)
-    TC = (T-T.min())/T.max()
-    TC = np.linspace(0,1,n)
-    COLORS = np.array([TC,TC[::-1],np.ones(n)*0.5]).T
-    
-
-    plt.scatter(X,Y,c=COLORS,lw=0,alpha=0.75)
-
-plt.show()
-
-
