@@ -6,13 +6,20 @@ import tqdm
 
 f_h5 = "points.h5"
 
-total_points = 10000
-t0, t1 = 0, 10
+t0, t1 = 0, 6
+total_points = int(((t1-t0)/4)*100)
 
-periods = [0,2,3,5,7,11,13]
-periods = np.array(periods,dtype=float)
-use_sqrt = True
-mp.dps = 15; mp.pretty = True
+periods = np.arange(15)/2.0
+use_sqrt = False
+repeats = True
+
+if repeats:
+    total_points *= 2
+
+#periods = [0,2,3,5,7,11,13,17,19,23]
+#use_sqrt = True
+
+mp.dps = 12; mp.pretty = True
 
 def coeffs(t):
     global periods
@@ -25,11 +32,19 @@ def coeffs(t):
 def croots(co):
     return [mp.mpc(x) for x in mp.polyroots(co)]
 
+periods = np.array(periods,dtype=float)
 T = np.linspace(t0,t1,total_points)
+
+if repeats:
+    T = np.hstack([T,T[::-1]])
+print T.shape
+
+
 C = coeffs(T)
 
-ITR = itertools.imap(croots, C)
+print periods
 
+ITR = itertools.imap(croots, C)
 MP = multiprocessing.Pool()
 ITR = MP.imap(croots, C,chunksize=20)
 
