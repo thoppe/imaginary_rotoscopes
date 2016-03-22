@@ -10,4 +10,4 @@ Work in progress example:
     f=cos(sqrt(q)*t)
     t=linspace(0,10, 10000)
 
-!(figures/simple_6.png)
+![](figures/simple_6.png)
