@@ -14,7 +14,6 @@ h5 = h5py.File(f_h5,'r')
 R = h5["points"][:]
 
 pt_N, root_N, _ = R.shape
-fps = 20
 fps = 40
 
 #duration = pt_N/fps - 1.0/fps
@@ -54,16 +53,13 @@ def make_frame(t):
         
         circle = gizeh.circle(radius, xy=xy, fill=c)
         circle.draw(surface)
-
-
-        
         
     return surface.get_npimage()
 
 clip = mpy.VideoClip(make_frame, duration=duration)
 
-if pt_N<=500:
-    clip.write_gif("circle.gif",fps=fps, opt="OptimizePlus", fuzz=20)
+#if pt_N<=500:
+clip.write_gif("circle.gif",fps=fps, opt="OptimizePlus", fuzz=20)
 
 clip.write_videofile(
     "circle.mp4",
