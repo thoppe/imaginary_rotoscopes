@@ -4,7 +4,7 @@ Rotoscoping the motion of roots across the complex plane.
 
 ## Moving image
 
-![](figures/alternate.gif)
+<a href="url"><img src=""https://raw.githubusercontent.com/thoppe/imaginary_rotoscopes/master/figures/alternate.gif" align="left" width="256" ></a>
 
 
 ## Static image
