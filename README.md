@@ -4,13 +4,10 @@ Rotoscoping the motion of roots across the complex plane.
 
 ## Moving image
 
-<div>
-<img src="https://raw.githubusercontent.com/thoppe/imaginary_rotoscopes/master/figures/alternate.gif" align="left" width="256"/>
 
-    More stuff here
-    Code here
-</div>
+<img src="https://raw.githubusercontent.com/thoppe/imaginary_rotoscopes/master/figures/alternate.gif" width=400"/>
 
+    [ 0.  2.  3.  2.  4.  2.  5.  2.  6.]
 
 ## Static image
   
