@@ -2,12 +2,13 @@
 
 Rotoscoping the motion of roots across the complex plane.
 
-## Moving image
+## Examples
 
 
-<img src="https://raw.githubusercontent.com/thoppe/imaginary_rotoscopes/master/figures/alternate.gif" width=400"/>
+    periods = [ 0.  2.  3.  2.  4.  2.  5.  2.  6.]
 
-    [ 0.  2.  3.  2.  4.  2.  5.  2.  6.]
+<img src="https://raw.githubusercontent.com/thoppe/imaginary_rotoscopes/master/figures/alternate.gif" width=256"/>
+  
 
 ## Static image
   
