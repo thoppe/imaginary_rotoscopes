@@ -9,36 +9,23 @@ gcd = np.frompyfunc(fractions.gcd, 2, 1)
 f_h5 = "points.h5"
 
 t0, t1 = 0, 6
-slowdown = 200
-
 periods = np.array([0,2,3,2,4,2,5,2,6])
 
-def gcd(a, b):
-    """Return greatest common divisor using Euclid's Algorithm."""
-    while b:      
-        a, b = b, a % b
-    return a
-
-def lcm(a, b):
-    """Return lowest common multiple."""
-    return a * b // gcd(a, b)
-
-t1 = reduce(lcm,periods[1:])
-t1 = 6
-
-total_points = int(((t1-t0)/4)*slowdown)
+#total_points = int(((t1-t0)/4)*slowdown)
+total_points = 400
 print "T0/T1/total points", t0,t1,total_points
 print list(periods)
 
-
-#periods /= 5
-#periods = np.arange(15)/2.0
-#periods = np.ones(10)
-#periods[0] = 0
-
-#use_sqrt = False
 use_sqrt = False
 repeats = True
+
+#periods /= 5
+periods = np.arange(15)/2.0
+periods[0] = 0
+#periods = np.ones(10)
+
+
+#use_sqrt = False
 
 #if repeats:
 #    total_points *= 2

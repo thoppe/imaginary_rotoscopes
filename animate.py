@@ -3,7 +3,7 @@ import numpy as np
 import moviepy.editor as mpy
 import itertools, math
 
-box = 128
+box = 200
 fps = 40
 
 ### Load the data
@@ -18,6 +18,11 @@ duration = 10
 print "Duration:",duration
 print "pt_N", pt_N
 
+use_circles = True
+use_circles = False
+
+alpha = 1.0
+
 def make_frame(t):
     
     W,H = np.array([box,box]) # width, height, in pixels
@@ -29,18 +34,19 @@ def make_frame(t):
     pts = R[i]
 
     cx = np.sin(t/duration*(np.pi))
-    c = (cx, 0.5, 0,0.75)
+    c = (cx, 0.5, 0, alpha)
     
     for x,y in pts:
         xy = dx + [x,y]*dx/1.5
 
         scale = box/128.
 
-        circle = gizeh.circle(radius+(2*scale), xy=xy, fill=[1,1,1,0.75])
-        circle.draw(surface)
+        if use_circles:
+            circle = gizeh.circle(radius+(2*scale), xy=xy, fill=[1,1,1,alpha])
+            circle.draw(surface)
 
-        circle = gizeh.circle(radius+(1*scale), xy=xy, fill=[0,0,0,1])
-        circle.draw(surface)
+            circle = gizeh.circle(radius+(1*scale), xy=xy, fill=[0,0,0,1])
+            circle.draw(surface)
         
         circle = gizeh.circle(radius, xy=xy, fill=c)
         circle.draw(surface)
