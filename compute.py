@@ -25,6 +25,10 @@ periods = np.array([0,2,3,2,4,2,5,2,6])
 periods = np.ones(10,dtype=float)
 periods[0] = 0
 
+# Signs
+periods = [0,1,-1,2,-2,3,-3,4,-4,5,-5]
+periods[0] = 0
+
 
 print "T0/T1/total points", t0,t1,total_points
 print list(periods)
