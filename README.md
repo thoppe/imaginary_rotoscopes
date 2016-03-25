@@ -2,7 +2,13 @@
 
 Rotoscoping the motion of roots across the complex plane.
 
+## Moving image
 
+![](figures/alternate.gif)
+
+
+## Static image
+  
 Work in progress example:
 
     n=6
