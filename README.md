@@ -42,7 +42,7 @@ Rotoscoping the motion of roots across the complex plane.
     periods = np.random.uniform(size=50)*(50/10.0) * 2 -1
     phase = np.linspace(0,twopi*2,periods.size)
 
-<img src="https://raw.githubusercontent.com/thoppe/imaginary_rotoscopes/master/figures/wigglewigglewiggle.gif" width=256"/>
+<a href="https://raw.githubusercontent.com/thoppe/imaginary_rotoscopes/master/figures/wigglewigglewiggle.mp4"><img src="https://raw.githubusercontent.com/thoppe/imaginary_rotoscopes/master/figures/wigglewigglewiggle.gif" width=256"/></a>
 
 #### static trace over sqrt(primes)
   
