@@ -1,0 +1,3 @@
+periods = np.ones(15,dtype=float)
+periods[0] = 0
+phase = np.linspace(0,twopi*2,periods.size)

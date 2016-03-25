@@ -1,0 +1,4 @@
+# wigglewigglewiggle with 2phase
+periods = np.random.uniform(size=50)*(50/10.0) * 2 -1
+periods[0] = 0
+phase = np.linspace(0,twopi*2,periods.size)
