@@ -9,29 +9,26 @@ gcd = np.frompyfunc(fractions.gcd, 2, 1)
 f_h5 = "points.h5"
 
 t0, t1 = 0, 6
-periods = np.array([0,2,3,2,4,2,5,2,6])
-
-#total_points = int(((t1-t0)/4)*slowdown)
 total_points = 400
-print "T0/T1/total points", t0,t1,total_points
-print list(periods)
 
 use_sqrt = False
 repeats = True
 
-#periods /= 5
+# Ordered 15
 periods = np.arange(15)/2.0
 periods[0] = 0
-#periods = np.ones(10)
+
+# Alternating
+periods = np.array([0,2,3,2,4,2,5,2,6])
+
+# Unity
+periods = np.ones(10,dtype=float)
+periods[0] = 0
 
 
-#use_sqrt = False
+print "T0/T1/total points", t0,t1,total_points
+print list(periods)
 
-#if repeats:
-#    total_points *= 2
-
-#periods = [0,2,3,5,7,11,13,17,19,23]
-#use_sqrt = True
 
 mp.dps = 12; mp.pretty = True
 
