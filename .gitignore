@@ -1,2 +1,15 @@
+# Python cruft
+*.pyc
+*.bak
+
+# Unix temp files
 *~
-*.h5
+
+# Build files
+.coverage
+*.egg-info/
+.tox/
+dist/
+
+# md2reveal
+.render_cache/
