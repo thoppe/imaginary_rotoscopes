@@ -1,4 +1,4 @@
-title  = "Hyperops"
+title  = "imaginary rotoscopes"
 author = "Travis Hoppe"
 
 target      = "HnT_pres.md"
