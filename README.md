@@ -52,3 +52,8 @@ Rotoscoping the motion of roots across the complex plane.
     t=linspace(0,10, 10000)
 
 ![](figures/simple_6.png)
+
+
+### Presentation
+
+This project was first presented at DC's Hack && Tell (April 2016). [Talk link.](http://thoppe.github.io/imaginary_rotoscopes/HnT_pres.html#/)
