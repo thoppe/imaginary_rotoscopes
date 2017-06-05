@@ -8,7 +8,7 @@ Rotoscoping the motion of roots across the complex plane.
  
     periods = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]
 
-<a href="https://raw.githubusercontent.com/thoppe/imaginary_rotoscopes/master/figures/ordered_15.mp4"><img src="https://raw.githubusercontent.com/thoppe/imaginary_rotoscopes/master/figures/ordered_15.gif" width=256"/></a>
+!()[figures/ordered_15.gif]
 
 #### Unity (boring)
 
