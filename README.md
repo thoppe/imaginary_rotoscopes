@@ -53,4 +53,6 @@ Rotoscoping the motion of roots across the complex plane.
 
 ### Presentation
 
-This project was first presented at DC's Hack && Tell (April 2016). [Talk link.](http://thoppe.github.io/imaginary_rotoscopes/HnT_pres.html#/)
+http://thoppe.github.io/imaginary_rotoscopes/HnT_pres.html#/
+
+First presented at [DC: Hack && Tell Round 43: Synergy of Disruption](https://www.meetup.com/DC-Hack-and-Tell/events/236404145/).
